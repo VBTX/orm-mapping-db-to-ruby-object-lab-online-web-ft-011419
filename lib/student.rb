@@ -82,6 +82,7 @@ def self.students_below_12th_grade
   SQL
 
   what = DB[:conn].execute(sql)
+  what
   binding.pry
 end
 

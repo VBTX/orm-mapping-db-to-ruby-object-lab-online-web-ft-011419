@@ -95,7 +95,6 @@ def self.first_X_students_in_grade_10(num)
 
   what = DB[:conn].execute(sql)
   what[0..num]
-  binding.pry
 end
 
 def self.first_student_in_grade_10

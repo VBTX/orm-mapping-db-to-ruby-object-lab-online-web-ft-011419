@@ -82,6 +82,7 @@ def self.students_below_12th_grade
   SQL
 
   what = DB[:conn].execute(sql)
+  binding.pry
 end
 
 def self.first_X_students_in_grade_10

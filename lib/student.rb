@@ -29,7 +29,6 @@ class Student
    SQL
 
    what = DB[:conn].execute(sql)
-   binding.pry
 
   end
 

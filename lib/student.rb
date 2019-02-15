@@ -91,7 +91,6 @@ def self.first_X_students_in_grade_10(num)
   SELECT *
   FROM students
   WHERE grade = 10
-  LIMIT num
   SQL
 
   DB[:conn].execute(sql)

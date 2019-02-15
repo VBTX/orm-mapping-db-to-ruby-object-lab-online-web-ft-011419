@@ -81,8 +81,9 @@ def self.students_below_12th_grade
   WHERE grade < 12
   SQL
 
-  what = DB[:conn].execute(sql)
-  what
+  DB[:conn].execute(sql).map do |row|
+    self.new_from_db(row)
+  end
 end
 
 def self.first_X_students_in_grade_10

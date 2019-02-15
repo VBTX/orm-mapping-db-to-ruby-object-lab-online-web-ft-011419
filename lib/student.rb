@@ -27,7 +27,7 @@ class Student
    WHERE "grade" = "9th"
    SQL
 
-   DB[:conn].execute(sql)
+   what = DB[:conn].execute(sql)
 
   end
 
